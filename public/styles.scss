@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Gravitas+One");
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat');
+
+//variables
+$Yellow: #FFE082;
+$Light-green: #7ed56f;
+$Medium-green: #55c57a;
+$Dark-green: #28b485;
+$Black: #212121;
+$White: #fafafa;
+$Grey: #e0e0e0;
+$Light-grey: #f7f7f7;
+$Orange: #ff9900;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: $Yellow;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
+}
+
+.gradientMe {
+    background: linear-gradient(rgba(20, 20, 20, 0.03), rgba(20, 20, 20, 0.03));
+    /*border-radius: 16px;*/
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+
+        ; //1800
+    }
+}
