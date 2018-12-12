@@ -22,6 +22,9 @@
 <script>
     export default {
         name: 'Header',
+        components: {
+
+        },
         data() {
             return {}
         }
@@ -84,8 +87,8 @@
             right: 2.5rem;
             /*5.5rem;
             6.5rem;*/
-            background-image: radial-gradient($color-primary-light, $color-primary-dark);
-            /*background-image: linear-gradient(90deg, #0083b0, #00b4db);*/
+            /*background-image: radial-gradient($color-primary-light, $color-primary-dark);*/
+            background-image: radial-gradient(#0083B0, #00B4DB);
             z-index: 1000;
             transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -143,7 +146,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-                background-size: 220%;
+                background-size: 225%;
                 transition: all 2s;
             }
 
@@ -151,14 +154,13 @@
             &:active {
                 background-position: 100%;
                 color: $Black;
-                /*$color-primary;*/
                 transform: translateX(1rem);
             }
         }
 
         //nav functionality
         &__checkbox:checked~&__background {
-            transform: scale(100);
+            transform: scale(150);
         }
 
         &__checkbox:checked~&__nav {
@@ -171,7 +173,6 @@
         &__icon {
             position: relative;
             margin-top: 1.8rem;
-            /*3.5rem;*/
 
             &,
             &::before,

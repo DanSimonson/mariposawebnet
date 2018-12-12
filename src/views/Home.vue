@@ -4,6 +4,7 @@
     <Header></Header>
     <Slider></Slider>
     <Logo></Logo>
+    <Parahome></Parahome>
     <!--<div class='test'>
       <h1>this is the Home page</h1>
     </div>
@@ -15,14 +16,18 @@
 <script>
   // @ is an alias to /src
   //import HelloWorld from '@/components/HelloWorld.vue'
+  import Parahome from '@/components/Parahome.vue'
   import Slider from '@/components/Slider.vue'
+  import Parallax from "vue-parallaxy";
 
 
   export default {
     name: 'home',
     components: {
       //HelloWorld
-      Slider
+      Slider,
+      Parallax,
+      Parahome
     }
   }
 </script>
