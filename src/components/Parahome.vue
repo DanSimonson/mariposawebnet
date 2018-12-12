@@ -1,7 +1,12 @@
 <template>
     <div id="parahome">
-        <div class='parallax-one' style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;"></div>
-        <!--<div class='parallax-one'></div> -->
+        <div class='parallax-one' style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;">
+            <h1 class='test'>Build Your Application Today</h1>
+            <h3 class="test"> ______________________ </h3>
+            <h3 class="test">MARIPOSAWEB DEVELOPMENT</h3>
+        </div>
+        <!--<div class='parallax-one'>
+        </div> -->
 
         <!--<img :src="image1">-->
 
@@ -15,7 +20,7 @@
         </v-parallax>-->
         <!--<div class="dividertwo"></div> -->
         <div class="container vueProjects">
-            <h1 class='myBtn'>Featured Vue.js Projects</h1>
+            <h1 class='myBtn align-me'>Featured Vue.js Projects</h1>
             <Slide></Slide>
         </div>
 
@@ -25,7 +30,7 @@
         <!--<v-parallax dark :src="imagetwo" height="380"></v-parallax>-->
 
         <!--<div class="dividertwo"></div> -->
-        <p class="myBtn">Javascript Projects</p>
+        <p class="myBtn align-me">Javascript Projects</p>
         <div class="grid myBtn">
             <div class="flex-card">
                 <!-- image container -->
@@ -170,6 +175,16 @@
     }
 
     .parallax-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: $White;
+
+        h3 {
+            margin-bottom: 10px;
+        }
 
         /*height: 900px;
         width: 100vw;
@@ -201,7 +216,7 @@
     }
 
     .myBtn {
-        color: white;
+        color: $White;
         /*#BDBDBD;*/
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         font-weight: 900;
@@ -217,6 +232,10 @@
         background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0083B0, #00B4DB);
+    }
+
+    .align-me {
+        text-align: center;
     }
 
     .vueProjects {
@@ -248,9 +267,10 @@
         border-radius: 16%;
     }
 
-    .flexbox .flex-card {
+    .flex-card {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     flex-card-content p {

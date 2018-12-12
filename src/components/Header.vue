@@ -12,7 +12,7 @@
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>Home</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>All Projects</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>Projects</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>Contact</a></li>
                 <!--<li class="navigation__item"><a href="#" class="navigation__link"><span>05</span></a></li>-->
             </ul>
@@ -87,8 +87,8 @@
             right: 2.5rem;
             /*5.5rem;
             6.5rem;*/
-            background-image: radial-gradient($color-primary-light, $color-primary-dark);
-            /*background-image: radial-gradient(#0083B0, #00B4DB);*/
+            /*background-image: radial-gradient($color-primary-light, $color-primary-dark);*/
+            background-image: radial-gradient(#0083B0, #00B4DB);
             z-index: 1000;
             transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -127,7 +127,8 @@
             list-style: none;
             text-align: center;
             width: 100%;
-            margin-top: 40px;
+            line-height: .8;
+            margin-top: 30px;
             /*border: 5px solid red;*/
         }
 

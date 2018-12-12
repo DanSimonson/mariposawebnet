@@ -226,22 +226,24 @@
         text-decoration: none;
     }
 
-    .btn-link {
+    a.btn-link {
+
 
         &:link,
         &:visited {
             font-size: 1.6rem;
-            color: $Medium-green;
+            color: $White;
+            /*background-color: $Medium-green;*/
             display: inline-block;
             text-decoration: none;
-            border-bottom: 1px solid $Medium-green;
+            /*border-bottom: 1px solid $Medium-green;*/
             padding: 3px;
             transition: all .2s;
         }
 
         &:hover {
             background-color: $Medium-green;
-            color: #BDBDBD;
+            color: $White;
             box-shadow: 0 1rem 2rem rgba($Black, .15);
             transform: translateY(-2px);
         }
