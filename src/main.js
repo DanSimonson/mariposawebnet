@@ -4,11 +4,11 @@ import router from "./router";
 import store from "./store";
 import Logo from "./components/Logo.vue";
 import Header from "./components/Header.vue";
-//import Footer from "./components/Footer.vue";
+import Footer from "./components/Footer.vue";
 
 Vue.component("Logo", Logo);
 Vue.component("Header", Header);
-//Vue.component("Footer", Footer);
+Vue.component("Footer", Footer);
 
 Vue.config.productionTip = false;
 

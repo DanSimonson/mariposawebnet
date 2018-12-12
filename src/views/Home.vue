@@ -5,6 +5,7 @@
     <Slider></Slider>
     <Logo></Logo>
     <Parahome></Parahome>
+    <Footer></Footer>
     <!--<div class='test'>
       <h1>this is the Home page</h1>
     </div>

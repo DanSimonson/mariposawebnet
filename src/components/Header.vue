@@ -87,8 +87,8 @@
             right: 2.5rem;
             /*5.5rem;
             6.5rem;*/
-            /*background-image: radial-gradient($color-primary-light, $color-primary-dark);*/
-            background-image: radial-gradient(#0083B0, #00B4DB);
+            background-image: radial-gradient($color-primary-light, $color-primary-dark);
+            /*background-image: radial-gradient(#0083B0, #00B4DB);*/
             z-index: 1000;
             transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 

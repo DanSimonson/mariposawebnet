@@ -1,6 +1,8 @@
 <template>
     <div id="parahome">
-        <div class='parallax-one'></div>
+        <div class='parallax-one' style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;"></div>
+        <!--<div class='parallax-one'></div> -->
+
         <!--<img :src="image1">-->
 
         <!--<v-parallax dark :src="image1">
@@ -11,17 +13,18 @@
 
             </v-layout>
         </v-parallax>-->
-        <!--<div class="dividertwo"></div>-->
+        <!--<div class="dividertwo"></div> -->
         <div class="container vueProjects">
             <h1 class='myBtn'>Featured Vue.js Projects</h1>
             <Slide></Slide>
         </div>
 
-        <!--<div class="dividertwo"></div>-->
-        <div class='parallax-two'></div>
+
+        <!--<div class="dividertwo"></div> -->
+        <div class='parallax-two' style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;"></div>
         <!--<v-parallax dark :src="imagetwo" height="380"></v-parallax>-->
 
-        <div class="dividertwo"></div>
+        <!--<div class="dividertwo"></div> -->
         <p class="myBtn">Javascript Projects</p>
         <div class="grid myBtn">
             <div class="flex-card">
@@ -143,8 +146,8 @@
                 let one = document.querySelector('.parallax-one');
                 let two = document.querySelector('.parallax-two');
                 let three = document.querySelector('.parallax-three');
-                one.style.backgroundPositionY = offset * 0.7 + 'px';
-                two.style.backgroundPositionY = offset * 0.7 + 'px';
+                one.style.backgroundPositionY = offset * 1.05 + 'px';
+                two.style.backgroundPositionY = offset * .95 + 'px';
                 three.style.backgroundPositionY = offset * 0.7 + 'px';
                 /*console.log('Offset: ' + offset);*/
                 if (window.scrollY > 30) {
@@ -172,22 +175,24 @@
 
     .parallax-one {
 
-        height: 800px;
+        /*height: 900px;
         width: 100vw;
-        background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544603238/projectPhotos/mariposaweb/butterfly/butterfly.jpg');
+        background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        /*background-position: center;
         background-attachment: fixed;
+        style="height: 900px;background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544625042/projectPhotos/mariposaweb/butterfly/butterflybig.jpg');"*/
+
     }
 
     .parallax-two {
-        height: 400px;
+        /*height: 300px;
         width: 100vw;
-        background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');
+        background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544624680/projectPhotos/mariposaweb/butterfly/butterfly2big.jpg');
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        /*background-position: center;
+        background-repeat: no-repeat;*/
     }
 
     .parallax-three {
@@ -195,8 +200,8 @@
         width: 100vw;
         background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg');
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        /*background-position: center;
+        background-repeat: no-repeat;*/
     }
 
     .myBtn {
