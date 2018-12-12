@@ -8,13 +8,13 @@
         <div class="carousel-controls">
             <div class="squares">
                 <div v-for="(slide, index) in slides" :key="slide.id"></div>
-                <p class="pSlide-one" style="display:inline-block;">
+                <p class="pSlide-one">
                     {{ slides[currentMsg].title }}
                 </p>
-                <p class="pslide-two" style="display:inline-block;">
+                <p class="pslide-two">
                     {{ slides[currentMsg].description }}
                 </p>
-                <a style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See More...</a>
+                <a class='btn-link' :href="`${slides[currentMsg].url}`" target="__blank">See More &rarr;</a>
             </div>
         </div>
         <div class="button-next" @click="arrowRight"></div>
@@ -129,7 +129,8 @@
     };
 </script>
 
-<style scoped>
+<style scoped lang='scss'>
+    @import "../../public/styles.scss";
     @import url("https://fonts.googleapis.com/css?family=Nixie+One");
     @import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans");
     @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Nixie+One");
@@ -176,29 +177,34 @@
         align-items: center;
         overflow: hidden;
         width: 100%;
-        min-height: 63%;
+        min-height: 75%;
+        /* 63%;
         /*border: 5px solid red*/
     }
 
     .carousel-controls {
         /*border: 5px solid mediumslateblue;*/
-        position: relative;
+        /*position: relative;*/
         height: 180px;
+        /*position: absolute;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .carousel-controls .squares {
-        position: absolute;
-
+        text-align: center;
         font-family: "Libre Baskerville", serif;
         line-height: 1.2;
-        color: white;
+        color: oldlace;
         /*border: 5px solid yellow;*/
-        height: 200px;
+        /*height: 200px;
         width: 400px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 2px;
+        padding: 2px;*/
     }
 
     p.pSlide-one {
@@ -212,12 +218,38 @@
     .carousel-controls .squares a {
         margin-bottom: 20px;
         font-size: 1.3em;
-        color: white;
+        color: oldlace;
     }
 
     .carousel-controls .squares a:hover {
         color: wheat;
         text-decoration: none;
+    }
+
+    .btn-link {
+
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+            color: $Medium-green;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $Medium-green;
+            padding: 3px;
+            transition: all .2s;
+        }
+
+        &:hover {
+            background-color: $Medium-green;
+            color: #BDBDBD;
+            box-shadow: 0 1rem 2rem rgba($Black, .15);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($Black, .15);
+            transform: translateY(0);
+        }
     }
 
     .slide {
@@ -254,6 +286,8 @@
         opacity: 0;
         visibility: hidden;
     }
+
+
 
     /*media queries*/
     @media screen and (max-width: 320px) {

@@ -150,11 +150,6 @@
                 two.style.backgroundPositionY = offset * .95 + 'px';
                 three.style.backgroundPositionY = offset * 0.7 + 'px';
                 /*console.log('Offset: ' + offset);*/
-                if (window.scrollY > 30) {
-                    //this.showLogo = false;
-                } else {
-                    //this.showLogo = true;
-                }
             }
         },
         created() {
@@ -163,7 +158,8 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang='scss'>
+    @import "../../public/styles.scss";
     @import url('https://fonts.googleapis.com/css?family=Gravitas+One');
     @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
