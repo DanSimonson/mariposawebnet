@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showLogo" id="divfix" class='gradientMe'>MariposaWeb</div>
+    <div v-if="showLogo" id="divfix">MariposaWeb</div>
 </template>
 <script>
     export default {
@@ -35,5 +35,8 @@
         color: #FFE082;
         padding: 5px;
         font-size: 2em;
+        background-color: linear-gradient(rgba(20, 20, 20, 0.03), rgba(20, 20, 20, 0.03));
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        border-radius: 50px;
     }
 </style>

@@ -1,7 +1,8 @@
 <template>
     <div class="cards">
-        <div v-if="showLogo" id="divfix">MariposaWeb</div>
+        <!--<div v-if="showLogo" id="divfix">MariposaWeb</div> -->
         <Header></Header>
+        <Logo></Logo>
         <div class="wrap">
             <div id="slide">
                 <transition appear name="bounce">
@@ -282,11 +283,16 @@
         -webkit-animation-delay: 2s;
         animation: slide 2.5s forwards;
         animation-delay: 2s;
+        text-align: center;
     }
 
     #slide h1 {
         margin-top: 5%;
         color: #fff;
+    }
+
+    a.suit_and_tie {
+        margin-top: 5px;
     }
 
     /*@-webkit-keyframes slide {
@@ -354,8 +360,12 @@
         background-color: linear-gradient(rgba(20, 20, 20, 0.5),
             rgba(20, 20, 20, 0.5));
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
+
+        p {
+            margin-bottom: 20px;
+        }
     }
 
     .box:hover {}
@@ -388,13 +398,13 @@
         }
 
         to {
-            -webkit-transform: scale(1.1);
+            -webkit-transform: scale(1.05);
         }
     }
 
     @keyframes hover-out {
         from {
-            -webkit-transform: scale(1.1);
+            -webkit-transform: scale(1.05);
         }
 
         to {

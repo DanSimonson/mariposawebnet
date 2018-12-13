@@ -19,7 +19,9 @@ $Orange: #ff9900;
     padding: 0;
 }
 
-body {}
+body {
+    background: linear-gradient(rgba(20, 20, 20, 0.03), rgba(20, 20, 20, 0.03)), $White;
+}
 
 .gradientMe {
     background: linear-gradient(rgba(20, 20, 20, 0.03), rgba(20, 20, 20, 0.03));
