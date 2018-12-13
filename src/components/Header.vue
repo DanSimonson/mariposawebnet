@@ -10,10 +10,22 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>Projects</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>Contact</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>
+                        <router-link to="/" tag="a" exact><strong>Home </strong>
+                        </router-link>
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>
+                        <router-link to="/about" tag="a" exact><strong>About </strong>
+                        </router-link>
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>
+                        <router-link to="/cards" tag="a" exact><strong>Portfolio </strong>
+                        </router-link>
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>
+                        <router-link to="/contact" tag="a" exact><strong>Contact </strong>
+                        </router-link>
+                    </a></li>
                 <!--<li class="navigation__item"><a href="#" class="navigation__link"><span>05</span></a></li>-->
             </ul>
         </nav>
@@ -137,6 +149,10 @@
         }
 
         &__link {
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
 
             &:link,
             &:visited {
@@ -149,13 +165,19 @@
                 background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
                 background-size: 225%;
                 transition: all 2s;
+
+
+
             }
 
             &:hover,
             &:active {
                 background-position: 100%;
-                color: $Black;
                 transform: translateX(1rem);
+
+                a {
+                    color: $Black;
+                }
             }
         }
 
