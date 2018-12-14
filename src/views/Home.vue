@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <!--<h1>this is the Home page</h1> -->
-    <Header></Header>
+
+    <Head></Head>
     <Slider></Slider>
     <Logo></Logo>
     <Parahome></Parahome>

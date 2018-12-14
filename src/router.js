@@ -3,6 +3,8 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Cards from "@/views/Cards";
 import Contact from "@/views/Contact";
+import BlogHome from "@/views/BlogHome.vue";
+import BlogPost from "@/views/BlogPost.vue";
 
 Vue.use(Router);
 
@@ -24,6 +26,16 @@ export default new Router({
       path: "/contact",
       name: "contact",
       component: Contact
+    },
+    {
+      path: "/blog/",
+      name: "blog-home",
+      component: BlogHome
+    },
+    {
+      path: "/blog/:slug",
+      name: "blog-post",
+      component: BlogPost
     },
     {
       path: "/about",

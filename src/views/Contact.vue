@@ -2,7 +2,8 @@
     <div>
         <div class="spacer"></div>
         <!--style="height: 50px; border: 5px solid black;"-->
-        <Header></Header>
+
+        <Head></Head>
         <Logo></Logo>
         <div class="outer-wrapper">
             <div class="wrap-left">

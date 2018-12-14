@@ -1,7 +1,8 @@
 <template>
     <div class="cards">
         <!--<div v-if="showLogo" id="divfix">MariposaWeb</div> -->
-        <Header></Header>
+
+        <Head></Head>
         <Logo></Logo>
         <div class="wrap">
             <div id="slide">

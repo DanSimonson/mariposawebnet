@@ -19,6 +19,10 @@
                         </router-link>
                     </a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>
+                        <router-link to="/blog/" tag="a" exact><strong>Blog </strong>
+                        </router-link>
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>&nbsp</span>
                         <router-link to="/cards" tag="a" exact><strong>Portfolio </strong>
                         </router-link>
                     </a></li>
@@ -33,7 +37,7 @@
 </template>
 <script>
     export default {
-        name: 'Header',
+        name: 'Head',
         components: {
 
         },
