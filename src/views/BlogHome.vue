@@ -16,7 +16,7 @@
                             <figure>
                                 <!-- Bind results using a ':' -->
                                 <!-- Use a v-if/else if their is a featured_image -->
-                                <img v-if="post.featured_image" :src="post.featured_image" alt="" />
+                                <img class='hover-animation' v-if="post.featured_image" :src="post.featured_image" alt="" />
                                 <img v-else src="http://via.placeholder.com/250x250" alt="" />
                             </figure>
                         </div>
@@ -90,8 +90,8 @@
         button {
             font-family: Arial, Hevetica, sans-serif;
             font-size: 17px;
-            background: #4eb1ba;
             padding: 12px 24px;
+            background: #4eb1ba;
             color: #0d47a1;
             text-decoration: none;
             border-radius: 3px;
@@ -118,15 +118,11 @@
 
     .card {
         /*border: 5px solid fuchsia;*/
-
         background: linear-gradient(#a1c4fd, #c2e9fb);
 
-
-        /*justify-content: flex-end;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);*/
-        h a {
-            text-decoration: none
+        a {
+            text-decoration: none;
+            color: $Black;
         }
     }
 
@@ -135,12 +131,53 @@
         width: 100%;
         text-align: center;
         padding: 10px;
+        transition: all .2s;
+    }
 
+    /*hover animation*/
+    .hover-animation {
+        animation-name: hover-out;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+    }
 
-        img:hover {
-            transform: scale(.95);
+    .hover-animation:hover {
+        animation-iteration-count: 2;
+        transform: scale(1);
+        -webkit-animation-name: hover-in;
+        animation-name: hover-in;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: 2;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+
+    @keyframes hover-in {
+        from {
+            -webkit-transform: scale(1);
+        }
+
+        to {
+            -webkit-transform: scale(1.05);
         }
     }
+
+    @keyframes hover-out {
+        from {
+            -webkit-transform: scale(1.05);
+        }
+
+        to {
+            -webkit-transform: scale(1);
+        }
+    }
+
+
+
 
     .two {
         /*border: 5px solid deepskyblue;*/
