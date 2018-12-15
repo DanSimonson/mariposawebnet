@@ -3,9 +3,10 @@
 
         <Head></Head>
         <Logo></Logo>
+        <!-- <span class="spin">-->
+        <h1 class='coolH1'>{{ page_title }}</h1>
 
         <div id="blog-home" class="cards">
-            <!-- <h1>{{ page_title }}</h1> -->
             <!--
         Create v-for and apply a key for Vue. Example is using a combination of the slug and index
       -->
@@ -35,15 +36,12 @@
 </template>
 
 <script>
-    /*import {
-        butter
-    } from '@/buttercms'*/
     import butter from "@/buttercms";
     export default {
         name: "blog-home",
         data() {
             return {
-                page_title: "Blog",
+                page_title: "Dan's Awesome Blog",
                 posts: []
             };
         },
@@ -58,15 +56,101 @@
                         // console.log(res.data)
                         this.posts = res.data.data;
                     });
+            },
+            loadMe() {
+                console.log('title: ', myTitle)
+
+                let myTitle = document.querySelector(".coolH1");
+                myTitle.classList.add('spin');
+
             }
         },
-        created() {
+        mounted() {
+            let selfie = this;
             this.getPosts();
+            this.$nextTick(() => {
+                selfie.loadMe();
+            })
+            /*this.$nextTick()
+                .then(function () {
+                    // DOM updated
+                    this.loadMe();
+                })
+            //window.addEventListener('load', () => {
+
+            // run after everything is in-place
+            //})*/
+
         }
     };
 </script>
 <style scoped lang="scss">
     @import "../../public/styles.scss";
+
+    /*.my-title {
+        margin: 50px 0;
+        border: 5px solid green;
+        text-align: center;
+    }*/
+
+    .coolH1 {
+        color: #0D47A1;
+        font-size: 5rem;
+        /*border: 5px solid brown;*/
+        margin: 50px 0;
+        text-align: center;
+
+    }
+
+    .spin {
+
+        /*-webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        transition: all 1s ease-in-out;*/
+        animation-duration: 5s;
+        /* the duration of the animation */
+        animation-timing-function: ease-out;
+        /* how the animation will behave */
+        animation-delay: .5s;
+        /* how long to delay the animation from starting */
+        animation-iteration-count: 1;
+        /* how many times the animation will play */
+        animation-name: spinMe;
+        /* the name of the animation we defined above */
+    }
+
+    @keyframes spinMe {
+        0% {
+            /*transform: translateX(-100%);*/
+            transform: rotateX(180deg);
+        }
+
+        25% {}
+
+        50% {
+            transform: rotateX(-180deg);
+            transform: scaleY(1.5);
+            transform: scaleX(1.5);
+            color: red;
+        }
+
+        75% {}
+
+        100% {
+            /*transform: translateX(0);*/
+            transform: rotateX(360deg);
+            transform: scaleY(1);
+            transform: scaleX(1);
+            color: #0D47A1;
+
+        }
+    }
+
+    .spin:hover {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+
+    }
 
     .cards {
         /*border: 5px solid orangered;*/
@@ -76,7 +160,6 @@
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 5rem;
         justify-content: center;
-
     }
 
     .media {
@@ -110,15 +193,12 @@
             box-shadow: 0 0.5rem 1rem rgba($Black, 0.15);
             transform: translateY(0);
         }
-
-
-
-
     }
 
     .card {
         /*border: 5px solid fuchsia;*/
         background: linear-gradient(#a1c4fd, #c2e9fb);
+        border-radius: 4%;
 
         a {
             text-decoration: none;
