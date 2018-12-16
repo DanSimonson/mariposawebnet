@@ -27,16 +27,16 @@
         data() {
             return {
                 slides: [{
-                        imgLink: require("../assets/vueProjects/waterfall2.jpg"),
-                        title: "Shining Nature Landscape",
-                        description: "Landscaping website using Vue, CSS Grid, Flexbox and SASS",
+                        imgLink: require("../assets/vueProjects/waterfall2big.jpg"),
+                        title: "ShiningNatureLandscape",
+                        description: "Landscaping website using Vue, CSSGrid, Flexbox, SASS",
                         id: 1,
                         url: "https://brave-mccarthy-f6fbb2.netlify.com"
                     },
                     {
-                        imgLink: require("../assets/vueProjects/hand.jpg"),
-                        title: "Spa Business Website",
-                        description: "Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox.",
+                        imgLink: require("../assets/vueProjects/handbig.jpg"),
+                        title: "Spa Website",
+                        description: "Spa website using Vue, Authentication, Route Guards.",
                         id: 2,
                         url: "https://user-info-ee17c.firebaseapp.com/"
                     },
@@ -56,8 +56,8 @@
                     },
                     {
                         imgLink: require("../assets/vueProjects/crud.jpg"),
-                        title: "Customer Information Application",
-                        description: "Customer Information crud app using Vue, Firestore, Bootstrap 4.",
+                        title: "Customer Information App",
+                        description: "crud app using Vue, Firestore, Bootstrap 4.",
                         id: 5,
                         url: "https://human-resources-cb42b.firebaseapp.com/"
 
@@ -148,8 +148,10 @@
 
     .carousel-view {
         position: relative;
-        height: 600px;
+        height: 100%;
+
         /*border: 5px solid green;*/
+
     }
 
     .carousel-view .button-prev,
@@ -158,17 +160,34 @@
         position: absolute;
         top: 50%;
         border: 12px solid transparent;
+
     }
 
     .carousel-view .button-prev {
-        border-right-color: white;
+        border-right-color: wheat;
         transform: rotate(-3deg);
         z-index: 1;
+        transition: all .3s;
     }
 
+
     .carousel-view .button-next {
-        border-left-color: white;
-        left: 97%;
+        border-left-color: wheat;
+        left: 96.5%;
+        transition: all .3s;
+    }
+
+    .carousel-view .button-prev:hover,
+    .carousel-view .button-prev:active {
+        border-right-color: purple;
+
+    }
+
+    .carousel-view .button-next:hover,
+    .carousel-view .button-next:active {
+
+        border-left-color: purple;
+
     }
 
     .carousel {
@@ -178,8 +197,13 @@
         overflow: hidden;
         width: 100%;
         min-height: 75%;
+
         /* 63%;
         /*border: 5px solid red*/
+        div.slide {
+            height: 290px;
+            width: 290px;
+        }
     }
 
     .carousel-controls {
@@ -199,12 +223,7 @@
         line-height: 1.2;
         color: oldlace;
         /*border: 5px solid yellow;*/
-        /*height: 200px;
-        width: 400px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2px;*/
+
     }
 
     p.pSlide-one {
@@ -293,10 +312,10 @@
 
     /*media queries*/
     @media screen and (max-width: 320px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
 
         .carousel-controls .squares {
             padding: 2px;
@@ -316,10 +335,10 @@
     }
 
     @media screen and (max-width: 375px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
 
         .carousel-controls .squares {
             width: 250px;
@@ -336,46 +355,56 @@
         .carousel-controls .squares a {
             font-size: 1em;
         }
+
+        .carousel-view .button-next {
+            border-left-color: white;
+            left: 90%;
+        }
     }
 
     @media screen and (max-width: 425px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
 
         .carousel-controls .squares {
             padding: 2px;
             font-size: 1em;
             line-height: 1;
         }
+
+        .carousel-view .button-next {
+            border-left-color: white;
+            left: 95%;
+        }
     }
 
     @media screen and (max-width: 768px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
     }
 
     @media screen and (max-width: 1024px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
     }
 
     @media screen and (max-width: 1440px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
     }
 
     @media screen and (max-width: 2560px) {
-        .slide {
+        /*.slide {
             height: 20em;
             flex: 0 0 20em;
-        }
+        }*/
     }
 </style>

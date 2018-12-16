@@ -65,7 +65,6 @@
         margin-top: 1.5em;
     }
 
-
     ul,
     ol {
         margin-bottom: 1.25em;

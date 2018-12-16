@@ -6,7 +6,7 @@
 
     <div class='wrapper'>
       <div class='inner-wrapper'>
-        <h1>About mariposaweb.net</h1>
+        <h1>About mariposaweb</h1>
         <h4>mariposaweb is a company run by me, Dan Simonson, to provide awesome web development services optimized for
           a great user experience.</h4>
         <div class='line'>
@@ -23,7 +23,7 @@
             (cum laude/3.65 GPA).</p>
           <p class='paragraph'>But I ended up doing networking type of work until I retired
             early to the Philippines.</p>
-          <p class='paragraph'> Retirement doesn't suit me though so I have
+          <p class='paragraph'> Retirement didn't suit me so I have
             returned to my initial idea made so many years ago -- become a programmer -- or in this case a
             web
             developer/software engineer.</p>

@@ -40,30 +40,7 @@
 </script>
 
 <template>
-    <!--not using this code<div style="height:200px;">
-
-        <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
-    </div>-->
     <div>
-        <!--<v-footer height="auto" id='show'>
-            <v-card flat tile class="flex light-blue darken-4 myBtn ">
-                <v-card-text class="text-xs-center">
-                    <strong class="subheading">This site is powered with <a style="color:#BDBDBD;text-decoration: none;font-weight: bold"
-                            href="https://buttercms.com/" target="_blank">Buttercms</a>
-                        and <a style="color:#BDBDBD;text-decoration: none;font-weight: bold" href="https://vuejs.org/"
-                            target="_blank">Vue</a>.
-                        Get connected with me on social networks!</strong>
-                    <v-spacer></v-spacer>
-                    <!--<v-btn v-for="icon in icons" :key="icon" icon dark class="mx-3" v-on:click.native="show(icon)">
-                    <v-icon size="24px">{{ icon }}</v-icon>
-                    </v-btn>
-                </v-card-text class="justify-center myBtn">
-                <!--grey lighten-2
-                <!--""
-                &copy;2018 — mariposaweb
-                </v-card-actions>
-            </v-card>
-        </v-footer>-->
         <section class="info">
             <!--<p><i class="fab fa-facebook"></i>here</p>-->
             <p>This site is powered with <a class='special-link' href="https://buttercms.com/" target="_blank">Buttercms</a>

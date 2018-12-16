@@ -364,7 +364,6 @@
             background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544923408/projectPhotos/mariposaweb/wrinklebig.jpg");
 
         }
-
     }
 
 

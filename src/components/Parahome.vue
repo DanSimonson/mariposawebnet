@@ -5,31 +5,14 @@
             <h3 class="test"> ______________________ </h3>
             <h3 class="test">MARIPOSAWEB DEVELOPMENT</h3>
         </div>
-        <!--<div class='parallax-one'>
-        </div> -->
 
-        <!--<img :src="image1">-->
-
-        <!--<v-parallax dark :src="image1">
-            <v-layout align-center column justify-center>
-                <h1 class="display-2 font-weight-thin mb-3 white--text">Build Your Application Today</h1>
-                <h3 class="white--text"> ______________________ </h3>
-                <h3 class="display-2 font-weight-thin mt-3  white--text">MARIPOSAWEB DEVELOPMENT</h3>
-
-            </v-layout>
-        </v-parallax>-->
-        <!--<div class="dividertwo"></div> -->
         <div class="container vueProjects">
             <h1 class='myBtn align-me'>Featured Vue.js Projects</h1>
             <Slide></Slide>
         </div>
 
+        <div class='parallax-two gradientMe' style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;"></div>
 
-        <!--<div class="dividertwo"></div> -->
-        <div class='parallax-two' style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;"></div>
-        <!--<v-parallax dark :src="imagetwo" height="380"></v-parallax>-->
-
-        <!--<div class="dividertwo"></div> -->
         <p class="myBtn align-me">Javascript Projects</p>
         <div class="grid myBtn">
             <div class="flex-card">
@@ -92,26 +75,8 @@
             </div>
         </div>
 
-        <!--<v-parallax dark :src="imagethree" height="300"></v-parallax>-->
         <div class='parallax-three'></div>
 
-        <!--bootstrap row replaced with new grid boxes-->
-        <!--<div class="row" id="last-row">
-                  <div style="background: #2193b0;font-family: 'Abril Fatface', cursive;font-weight: bold;font-size: 18px;align-items: center;justify-content: center;"
-                      class="col s4 promoBox">
-                      Web Development with an emphasis on designing, building, and managing web solutions
-      
-                  </div>
-                  <div style="background: #00B4DB;font-family: 'Abril Fatface', cursive;font-weight: bold;font-size: 20px;align-items: center;justify-content: center;"
-                      class="col s4 promoBoxMiddle">
-                      We are passionate about the digital experience, creating stuff real people will really love.
-                  </div>
-                  <div style="background: #2193b0;font-family: 'Abril Fatface', cursive;font-weight: bold;font-size: 20px;align-items: center;justify-content: center;"
-                      class="col s4 promoBox">
-                      We offer a visually rich, engaging interactive experience
-                  </div>
-              </div>-->
-        <!--end old bootstrap row-->
         <div class="last-row">
             <div class='left'>
                 <p>Web Development with an emphasis on designing, building, and managing web solutions</p>
@@ -154,7 +119,6 @@
                 one.style.backgroundPositionY = offset * 1.05 + 'px';
                 two.style.backgroundPositionY = offset * .95 + 'px';
                 three.style.backgroundPositionY = offset * 0.7 + 'px';
-                /*console.log('Offset: ' + offset);*/
             }
         },
         created() {
@@ -491,6 +455,18 @@
 
 
     /*media queries*/
+    @media only screen and (max-width: 380px) {
+        .vueProjects {
+            height: 850px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
     @media only screen and (max-width: 768px) {
         .grid {
             grid-template-columns: 1fr 1fr;
@@ -500,11 +476,9 @@
             grid-template-columns: 1fr;
 
         }
-    }
 
-    @media only screen and (max-width: 500px) {
-        .grid {
-            grid-template-columns: 1fr;
+        .vueProjects {
+            height: 625px;
         }
     }
 </style>
