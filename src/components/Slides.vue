@@ -109,20 +109,20 @@
         }
     }
 
-    /*not using this class to rotate title*/
+    /*not using this class to rotate title
     .rotating p {
-        transition: transform .8s ease-in;
+        transition: transform 2s ease-in;
     }
 
     .rotating p:hover {
         transform: rotateX(360deg);
-    }
+    }*/
 
     /*scaling and changing color of title on hover*/
     .slide-title p:hover {
         animation-name: wow;
-        animation-duration: .5s;
-        /*animation-delay: .5s;*/
+        animation-duration: 2s;
+        animation-delay: .5s;
         cursor: crosshair;
     }
 
@@ -133,7 +133,7 @@
         }
 
         50% {
-            transform: scale(1.1);
+            transform: scale(1.5);
             color: red;
         }
 
