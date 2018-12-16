@@ -17,7 +17,7 @@
         <div class="grid myBtn">
             <div class="flex-card">
                 <!-- image container -->
-                <div class="flex-card-image">
+                <div class="flex-card-image hover-animation">
                     <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1541889537/scrabbleResize.jpg" />
                 </div>
                 <!-- content container -->
@@ -32,7 +32,7 @@
             </div>
             <div class="flex-card">
                 <!-- image container -->
-                <div class="flex-card-image">
+                <div class="flex-card-image hover-animation">
                     <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537117177/projectPhotos/simon.jpg" />
                 </div>
                 <!-- content container -->
@@ -47,7 +47,7 @@
             </div>
             <div class="flex-card">
                 <!-- image container -->
-                <div class="flex-card-image">
+                <div class="flex-card-image hover-animation">
                     <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118049/projectPhotos/wikipedia.jpg" />
                 </div>
                 <!-- content container -->
@@ -61,7 +61,7 @@
             </div>
             <div class="flex-card">
                 <!-- image container -->
-                <div class="flex-card-image">
+                <div class="flex-card-image hover-animation">
                     <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118827/projectPhotos/twitch.png" />
                 </div>
                 <!-- content container -->
@@ -235,6 +235,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        transition: all 2s;
     }
 
     flex-card-content p {
@@ -373,35 +374,6 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
-    /*** boxes replaced with grid boxes***/
-    /*promoBox {
-          font-family: 'Abril Fatface',
-            cursive;
-          font-weight: bold;
-          font-size: 20px;
-          height: 200px;
-          background: #2193b0;
-          /* fallback for old browsers 
-          background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-          /* Chrome 10-25, Safari 5.1-6 
-          background: linear-gradient(to right, #6dd5ed, #2193b0);
-          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-          align-items: center;
-          justify-content: center;
-        }*/
-
-    /*promoBoxMiddle {
-          font-family: 'Abril Fatface', cursive;
-          font-weight: bold;
-          font-size: 20px;
-          color: #fff;
-          background: #00B4DB;
-          /* Chrome 10-25, Safari 5.1-6 
-          background: linear-gradient(to right, #0083B0, #00B4DB);
-          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-          align-items: center;
-          justify-content: center;
-        }*/
 
     .btn {
         margin-bottom: 5px;
@@ -451,6 +423,48 @@
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #6dd5ed, #2193b0);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    /*hover animation*/
+    .hover-animation {
+        animation-name: hover-out;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+    }
+
+    .hover-animation:hover {
+        animation-iteration-count: 2;
+        transform: scale(1);
+        -webkit-animation-name: hover-in;
+        animation-name: hover-in;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: 2;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+
+    @keyframes hover-in {
+        from {
+            -webkit-transform: scale(1);
+        }
+
+        to {
+            -webkit-transform: scale(1.05);
+        }
+    }
+
+    @keyframes hover-out {
+        from {
+            -webkit-transform: scale(1.05);
+        }
+
+        to {
+            -webkit-transform: scale(1);
+        }
     }
 
 
