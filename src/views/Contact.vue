@@ -1,10 +1,20 @@
 <template>
     <div>
-        <div class="spacer"></div>
+        <!--<div class="spacer"></div>-->
         <!--style="height: 50px; border: 5px solid black;"-->
 
         <Head></Head>
         <Logo></Logo>
+        <div class='tricorder'>
+            <!--<img src="https://res.cloudinary.com/dmglopmul/image/upload/v1544885305/projectPhotos/mariposaweb/tricorder.jpg">-->
+            <div class="container gradientMe">
+                <p>Contact Us</p>
+                <p>mariposaweb.net is here to answer any questions you may have and create an effective
+                    solution for your web development needs
+                </p>
+            </div>
+        </div>
+
         <div class="outer-wrapper">
             <div class="wrap-left">
                 <div class="container">
@@ -45,14 +55,18 @@
             </div>
             <div class="wrap-right">
                 <div class="gmap_canvas">
-                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%20silang&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    <iframe width="600" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=%20silang&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://www.maps-erstellen.de"></a>
                 </div>
             </div>
+
         </div>
         <Footer></Footer>
+
     </div>
+
+
 </template>
 <script>
     export default {
@@ -88,16 +102,45 @@
         }
     };
 </script>
-<style scoped>
+<style scoped lang='scss'>
     /*google Fonts*/
     @import url("https://fonts.googleapis.com/css?family=Kalam");
     @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat");
+    @import "../../public/styles.scss";
+
+    .tricorder {
+        height: 26vw;
+        width: 90vw;
+        /*border: 5px solid firebrick;*/
+        margin: 130px auto 0 auto;
+        background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544885305/projectPhotos/mariposaweb/tricorder.jpg");
+        background-position: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+        .container {
+            /*border: 5px solid orange;*/
+            color: $White;
+            font-size: 2rem;
+            margin-top: 10px;
+            display: flex;
+
+            p {
+                margin: 0 auto;
+            }
+        }
+    }
 
     .outer-wrapper {
         /*border: 5px solid black;*/
-
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+
     }
 
     .wrap-left {
@@ -110,23 +153,29 @@
         height: 100%;
         margin-bottom: 5px;
         /*border: 5px solid red;*/
-
+        display: block
     }
 
     .container {
-        /*border: 5px solid aquamarine;*/
-        margin-top: 20px;
+        /*border: 5px solid blue;*/
+        width: 100%;
+        margin-top: 0;
         margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
     }
 
     /*wrap my form and image/text sections*/
     .wrapper {
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        border: 2px solid $Grey;
-        max-width: 960px;
+        border: 1px solid $Grey;
+        max-width: 100%;
         /*margin: 80px auto 0 auto;*/
-        margin: 80px 20px 0 20px;
+        margin: 80px 20px 10px 20px;
         padding-left: 25px;
         background: url("../assets/wrinkle.jpg");
         background-repeat: no-repeat;
@@ -181,19 +230,20 @@
     .grid {
         grid-column: 1/4;
         margin-bottom: 50px;
-        /*display: -webkit-flex;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      -webkit-align-items: center;
-      align-items: center;
-      flex-wrap: wrap;*/
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        flex-wrap: wrap;
         /*border: 5px solid green;*/
     }
 
     .box {
         display: flex;
         align-items: center;
+        /*border: 5px solid deeppink;*/
         height: 100%;
         width: 100%;
         margin: 5px;
@@ -228,13 +278,14 @@
     }
 
     #name,
-    #email,
-    #message {
+    #email {
         border: 1px solid #333;
+        width: 80%;
     }
 
     #message {
-        max-width: 90%;
+        border: 1px solid #333;
+        width: 95%;
     }
 
     .gmap_canvas {
@@ -245,13 +296,15 @@
         overflow: hidden;
         padding-left: 5px;
         padding-right: 5px;
+        border-radius: 2%
     }
 
     .wrap-right {
         margin-top: 90px;
-        /*margin-bottom: 5px;
-      margin-left: 10px;*/
         margin-right: 10px;
+        margin-bottom: 10px;
+        /*border: 5px solid black;*/
+
     }
 
     .gmap_canvas iframe {
@@ -263,51 +316,106 @@
     }
 
     /*media Queries*/
-    @media only screen and (max-width: 768px) {
-        .outer-wrapper {
+    @media only screen and (max-width: 360px) {
+        .container {
+
+            p {
+
+                /*font-size: 1rem;
+                line-height: 1.5;*/
+            }
+
+        }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+        .container {
+            /*border: 5px solid red;*/
+            margin-top: 0;
+            margin-bottom: 0;
+
+            p {
+                line-height: 1;
+                font-size: 1rem;
+
+            }
+
+        }
+
+        .box {
             flex-direction: column;
         }
 
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            font-size: 1rem;
+        }
+    }
+
+    @media only screen and (min-width: 1800px) {
+        .tricorder {
+            background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544922900/projectPhotos/mariposaweb/tricorderbig.jpg");
+        }
+
         .wrapper {
-            display: grid;
-            grid-template-columns: 1fr;
-            margin-bottom: 5px;
-            /*grid-column-gap: 10px;
-              border: 5px solid yellow;*/
+            background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544923408/projectPhotos/mariposaweb/wrinklebig.jpg");
+
         }
 
-        .gmap_canvas {
-            padding-bottom: 100%;
-        }
     }
 
-    @media only screen and (min-width: 768px) {
-        .gmap_canvas {
-            padding-bottom: 150%;
-        }
-    }
 
-    @media only screen and (min-width: 1024px) {
-        .gmap_canvas {
-            padding-bottom: 112%;
-        }
-    }
 
-    @media only screen and (min-width: 1440px) {
-        .gmap_canvas {
-            padding-bottom: 72%;
-        }
-    }
 
-    @media only screen and (min-width: 1600px) {
-        .gmap_canvas {
-            padding-bottom: 65%;
-        }
-    }
 
-    @media only screen and (min-width: 2560px) {
-        .gmap_canvas {
-            padding-bottom: 40%;
+    /*@media only screen and (max-width: 768px) {
+
+            .outer-wrapper {
+                flex-direction: column;
+            }
+
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-bottom: 5px;
+
+            }
+
+            .gmap_canvas {
+                padding-bottom: 100%;
+            }
         }
-    }
+
+        @media only screen and (min-width: 768px) {
+            .gmap_canvas {
+                padding-bottom: 150%;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .gmap_canvas {
+                padding-bottom: 112%;
+            }
+        }
+
+        @media only screen and (min-width: 1440px) {
+            .gmap_canvas {
+                padding-bottom: 72%;
+            }
+        }
+
+        @media only screen and (min-width: 1600px) {
+            .gmap_canvas {
+                padding-bottom: 65%;
+            }
+        }
+
+        @media only screen and (min-width: 2560px) {
+            .gmap_canvas {
+                padding-bottom: 40%;
+            }
+        }*/
 </style>

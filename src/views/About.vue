@@ -71,6 +71,7 @@
       width: 50vw;
       height: 40vw;
       margin-top: 2.5rem;
+      border-radius: 4px;
     }
 
     .my-name {
