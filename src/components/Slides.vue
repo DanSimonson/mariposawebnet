@@ -121,8 +121,8 @@
     /*scaling and changing color of title on hover*/
     .slide-title p:hover {
         animation-name: wow;
-        animation-duration: 3.5s;
-        animation-delay: 1s;
+        animation-duration: .5s;
+        /*animation-delay: .5s;*/
         cursor: crosshair;
     }
 
