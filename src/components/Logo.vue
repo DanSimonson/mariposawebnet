@@ -10,6 +10,7 @@
             }
         },
         methods: {
+
             handleScroll() {
                 if (window.scrollY > 30) {
                     this.showLogo = false;

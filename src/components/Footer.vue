@@ -87,7 +87,6 @@
 
     i.fab.fa-twitter {
         color: #1565C0;
-
     }
 
     i.fab.fa-facebook-square {
@@ -132,19 +131,12 @@
         font-weight: 900;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         padding-bottom: 10px;
-
-
     }
 
-
     /* social icons*/
-
-
     /*********************/
-
     /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
                     prefixes courtesy of autoprefixer*/
-
     ul.social-set {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -194,9 +186,7 @@
 
     a.sociali:hover,
     a.sociali:focus {
-
         background: #2193b0;
-
     }
 
     @media(max-width:768px) {

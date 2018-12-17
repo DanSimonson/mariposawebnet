@@ -14,8 +14,12 @@
         <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1544859804/projectPhotos/mariposaweb/cartoonme1.jpg'>
 
         <div class='text'>
-          <p class='my-name' style="color: red; font-size: 2rem;">Who is Dan Simonson?</p>
-          <p class='my-question' style="font-size: 3.5rem">How does he know about this stuff?</p>
+          <p class='my-name' data-aos="slide-right" data-aos-duration="1000">Who
+            is
+            Dan Simonson?</p>
+          <p class='my-question' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">How
+            does he know
+            about this stuff?</p>
           <p class='paragraph'>I'm a family guy who grew up in the heart of silicon valley with the dream of one day
             becoming a programmer.
             Life got in the way though. I did manage to get an Associates in Programming and a Bachelor of Science in
@@ -75,7 +79,14 @@
     }
 
     .my-name {
-      color: #red;
+      color: red;
+      font-size: 2rem;
+
+
+    }
+
+    .my-question {
+      font-size: 3.5rem
     }
 
     .paragraph {
