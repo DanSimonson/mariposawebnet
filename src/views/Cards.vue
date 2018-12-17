@@ -1,13 +1,13 @@
 <template>
     <div class="cards">
-        <!--<div v-if="showLogo" id="divfix">MariposaWeb</div> -->
 
         <Head></Head>
         <Logo></Logo>
         <div class="wrap">
-            <div id="slide">
+            <div id="slide" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="2000" data-aos-easing="ease-in-out">
                 <transition appear name="bounce">
-                    <h1>ALL PROJECTS</h1>
+                    <h1 data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="2000" data-aos-easing="ease-in-out">ALL
+                        PROJECTS</h1>
                 </transition>
             </div>
         </div>
@@ -20,38 +20,11 @@
                 <!-- <button class="suit_and_tie">See More</button> -->
                 <a :href="card.link" target="_blank" class="suit_and_tie">See More</a>
             </div>
-            <!--
-          <div class="box">
+            <!--<div class="box">
               <i class="fas fa-globe fa-4x"></i>
               <h3>Marketing</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-          </div>
-          <div class="box">
-              <i class="fas fa-cog fa-4x"></i>
-              <h3>Development</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-          </div>
-          <div class="box">
-              <i class="fas fa-users fa-4x"></i>
-              <h3>Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-          </div>
-          <div class="box">
-              <i class="fas fa-users fa-4x"></i>
-              <h3>Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-          </div>
-          <div class="box">
-              <i class="fas fa-users fa-4x"></i>
-              <h3>Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-          </div>
-          <div class="box">
-              <i class="fas fa-users fa-4x"></i>
-              <h3>Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-          </div>
-        -->
+          </div>-->
         </section>
         <Footer></Footer>
     </div>
@@ -250,6 +223,8 @@
     };
 </script>
 <style scoped lang="scss">
+    @import "../../public/styles.scss";
+
     #divfix {
         font-family: "Great Vibes", cursive;
         top: 6px;
@@ -275,7 +250,13 @@
     }
 
     #slide {
-        position: absolute;
+        background: blue;
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        /*position: absolute;
         left: -600px;
         width: 600px;
         height: 100%;
@@ -284,7 +265,8 @@
         -webkit-animation-delay: 2s;
         animation: slide 2.5s forwards;
         animation-delay: 2s;
-        text-align: center;
+        text-align: center;*/
+
     }
 
     #slide h1 {
@@ -296,13 +278,6 @@
         margin-top: 5px;
     }
 
-    /*@-webkit-keyframes slide {
-          100% {
-              left: 0;
-              /*transform: translate(-50%, -50%);
-          }
-      }*/
-
     @keyframes slide {
         100% {
             left: 50%;
@@ -312,33 +287,38 @@
 
     .bounce-enter-active {
         animation: bounce-in 2.5s;
-        animation-delay: 4s;
-        animation-direction: alternate;
+        animation-delay: 2.5s;
+        /*animation-direction: alternate;*/
     }
 
     .bounce-leave-active {
-        animation: bounce-in 2.5s reverse;
+        animation: bounce-in 2.5s;
+        /*reverse;*/
         animation-delay: 2s;
     }
 
     @keyframes bounce-in {
         0% {
-            transform: scale(0);
+            transform: scale(1);
+            color: &White;
+        }
+
+        25% {
             color: aqua;
-            /*background-color: green;*/
-            transform: rotateX(180deg);
         }
 
         50% {
-            transform: scale(1.5);
-            color: orange;
-            /*background-color: goldenrod;*/
+            transfrom: scale(1.5);
+        }
+
+        75% {
+            transform: scale(1.7);
+            color: cyan;
         }
 
         100% {
             transform: scale(1);
-            color: #81c784;
-            /*background-color: indianred;*/
+            color: $White;
         }
     }
 

@@ -7,17 +7,17 @@
     <div class='wrapper'>
       <div class='inner-wrapper'>
         <h1>About mariposaweb</h1>
-        <h4>mariposaweb is a company run by me, Dan Simonson, to provide awesome web development services optimized for
+        <h4>mariposaweb is a company run by me, Dan Simonson, to provide awesome web development optimized for
           a great user experience.</h4>
         <div class='line'>
         </div>
         <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1544859804/projectPhotos/mariposaweb/cartoonme1.jpg'>
 
         <div class='text'>
-          <p class='my-name' data-aos="slide-right" data-aos-duration="1000">Who
+          <p class='my-name' data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-out">Who
             is
             Dan Simonson?</p>
-          <p class='my-question' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">How
+          <p class='my-question' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">How
             does he know
             about this stuff?</p>
           <p class='paragraph'>I'm a family guy who grew up in the heart of silicon valley with the dream of one day
