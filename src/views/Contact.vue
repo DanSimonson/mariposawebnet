@@ -121,8 +121,6 @@
         align-items: center;
 
 
-
-
         .container {
             /*border: 5px solid orange;*/
             color: $White;
