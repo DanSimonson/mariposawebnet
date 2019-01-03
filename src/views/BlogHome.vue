@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <Head></Head>
         <Logo></Logo>
         <!-- <span class="spin">-->

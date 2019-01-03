@@ -53,6 +53,15 @@ export default {
       showLogo: true,
       cards: [
         {
+          title: "Drum Machine",
+          link: "https://cocky-khorana-ef49fc.netlify.com/",
+          text:
+            "Goal: Create a Drum Machine with some cool animations. Technologies: Vue.js, modern CSS",
+          src: require("../assets/muted/wall.jpg"),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
+        {
           title: "Modal-Lightbox",
           link: "http://boring-finger.surge.sh/",
           text:
