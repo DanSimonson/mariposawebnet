@@ -53,6 +53,15 @@ export default {
       showLogo: true,
       cards: [
         {
+          title: "Vue Calculator",
+          link: "https://reverent-fermat-cd3243.netlify.com/",
+          text:
+            "Goal: Create a Calculator using Vue. Technologies: Vue.js, modern CSS",
+          src: require("../assets/muted/purple.jpg"),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
+        {
           title: "Drum Machine",
           link: "https://cocky-khorana-ef49fc.netlify.com/",
           text:
