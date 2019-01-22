@@ -53,6 +53,15 @@ export default {
       showLogo: true,
       cards: [
         {
+          title: "Compare Calculators",
+          link: "http://serious-marble.surge.sh/",
+          text:
+            "Goal: Create Vue and React Calculators. Technologies: Vue.js, React.js, modern CSS",
+          src: require("../assets/muted/purple.jpg"),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
+        {
           title: "Vue Calculator",
           link: "https://reverent-fermat-cd3243.netlify.com/",
           text:
