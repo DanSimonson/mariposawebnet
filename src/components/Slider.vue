@@ -37,7 +37,7 @@
                     {
                         id: 3,
                         url: "https://res.cloudinary.com/dmglopmul/image/upload/v1539022882/projectPhotos/mariposaweb/internet.jpg",
-                        title: "We leverage the capabilities of Vue.js and JavaScript to fit needs.",
+                        title: "We leverage Vue.js, React.js and JavaScript to fit needs.",
                         description: "Lorem ipsum dolor sit amet, consectetur"
                     },
                     {
