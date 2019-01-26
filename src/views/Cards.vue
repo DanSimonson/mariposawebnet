@@ -54,7 +54,7 @@ export default {
       cards: [
         {
           title: "Compare Calculators",
-          link: "http://serious-marble.surge.sh/",
+          link: "https://loving-kalam-ffb4a8.netlify.com",
           text:
             "Goal: Create Vue and React Calculators. Technologies: Vue.js, React.js, modern CSS",
           src: require("../assets/muted/purple.jpg"),
