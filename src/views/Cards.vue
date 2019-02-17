@@ -53,6 +53,15 @@ export default {
       showLogo: true,
       cards: [
         {
+          title: "Two-Ways Todos",
+          link: "https://xenodochial-benz-2c40df.netlify.com/",
+          text:
+            "Goal: Compare controlled and uncontrolled inputs and show examples of map and filter method. Technologies: React.js, modern CSS",
+          src: require("../assets/muted/polkadot.jpg"),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
+        {
           title: "Compare Calculators",
           link: "https://loving-kalam-ffb4a8.netlify.com",
           text:
