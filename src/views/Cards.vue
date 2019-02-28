@@ -161,7 +161,7 @@ export default {
           flex: 6
           //"https://res.cloudinary.com/dmglopmul/image/upload/v1530327261/aspa.jpg"
         },
-        {
+        /*{
           title: "Online Store",
           link: "https://vue-blog-ed03b.firebaseapp.com/",
           text:
@@ -170,7 +170,7 @@ export default {
           flex: 6
 
           //https://cdn.buttercms.com/OUEb12H8TT6nV2fOPPSE
-        },
+        },*/
         {
           title: "Hacker-News Clone",
           link: "http://extra-small-stick.surge.sh",
