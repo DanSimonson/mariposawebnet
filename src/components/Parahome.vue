@@ -1,9 +1,7 @@
 <template>
+  <!--style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;" -->
   <div id="parahome">
-    <div
-      class="parallax-one"
-      style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;"
-    >
+    <div class="parallax-one">
       <h1 class="test">Build Your Application Today</h1>
       <h3 class="test">______________________</h3>
       <h3 class="test">MARIPOSAWEB DEVELOPMENT</h3>
@@ -13,13 +11,13 @@
       <h1 class="myBtn align-me">Featured Vue.js Projects</h1>
       <Slide></Slide>
     </div>
-
-    <div
+    <!--style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;" -->
+    <div      
       class="parallax-two gradientMe"
-      style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;"
-    ></div>
+      ></div>
 
     <p class="myBtn align-me">Some More Projects</p>
+
     <div class="grid myBtn">
       <div class="flex-card">
         <!-- image container -->
@@ -204,8 +202,17 @@ export default {
         background-attachment: fixed;
         style="height: 900px;background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544625042/projectPhotos/mariposaweb/butterfly/butterflybig.jpg');"*/
 }
+.parallax-one {
+  height: 400px;
+  width: 100vw;
+  background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
+
+}
 
 .parallax-two {
+  height: 400px;
+  width: 100vw;
+  background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
   /*height: 300px;
         width: 100vw;
         background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544624680/projectPhotos/mariposaweb/butterfly/butterfly2big.jpg');
@@ -214,13 +221,13 @@ export default {
         background-repeat: no-repeat;*/
 }
 
-.parallax-three {
+.parallax-three { 
   height: 400px;
   width: 100vw;
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
-  background-size: cover;
-  /*background-position: center;
-        background-repeat: no-repeat;*/
+  /*background-size: cover;
+  background-position: center;*/
+  //background-repeat: no-repeat;
 }
 
 .myBtn {
