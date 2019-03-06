@@ -204,15 +204,23 @@ export default {
 }
 .parallax-one {
   height: 400px;
-  width: 100vw;
+  /*width: 100vw;*/
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
 
 }
 
 .parallax-two {
   height: 400px;
-  width: 100vw;
+  /*width: 100vw;*/
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /*height: 300px;
         width: 100vw;
         background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544624680/projectPhotos/mariposaweb/butterfly/butterfly2big.jpg');
@@ -223,8 +231,12 @@ export default {
 
 .parallax-three { 
   height: 400px;
-  width: 100vw;
+  /*width: 100vw;*/
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /*background-size: cover;
   background-position: center;*/
   //background-repeat: no-repeat;

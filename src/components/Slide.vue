@@ -41,11 +41,12 @@
                         url: "https://user-info-ee17c.firebaseapp.com/"
                     },
                     {
-                        imgLink: require("../assets/vueProjects/onlineStore.jpg"),
-                        title: "Online Store",
-                        description: "A Vue.js online store utilizing vuex and firebase.",
-                        id: 3,
-                        url: "https://vue-blog-ed03b.firebaseapp.com/"
+                        imgLink: require("../assets/vueProjects/childrenKusina2.jpg"),
+                      title: "Cucina Ni Nanay",
+                      description:
+                        "Filipino cuisine restaurant using Vue, CSS Grid, Flexbox",
+                      id: 6,
+                      url: "http://aberrant-tendency.surge.sh/#/"
                     },
                     {
                         imgLink: require("../assets/vueProjects/hackerNews.png"),
@@ -63,19 +64,20 @@
 
                     }
                     /*{
-                                  imgLink: require('../assets/vueProjects/recipeBox.jpg'),
+                               
+                                   imgLink: require("../assets/vueProjects/onlineStore.jpg"),
+                        title: "Online Store",
+                        description: "A Vue.js online store utilizing vuex and firebase.",
+                        id: 3,
+                        url: "https://vue-blog-ed03b.firebaseapp.com/"
+                    }
+                    /*{
+                      
+                       imgLink: require('../assets/vueProjects/recipeBox.jpg'),
                                   title: 'Recipe Box',
                                   description: 'Application that can create, edit, delete and save recipes, taking advantage of Vue, Firestore, MaterializeCSS, JavaScript.',
                                   id: 5,
                                   url: 'https://recipes-ddb43.firebaseapp.com/#/'
-                              },
-                    {
-                      imgLink: require("../assets/vueProjects/childrenKusina2.jpg"),
-                      title: "Cucina Ni Nanay",
-                      description:
-                        "Filipino cuisine restaurant using Vue, CSS Grid, Flexbox",
-                      id: 6,
-                      url: "http://aberrant-tendency.surge.sh/#/"
                     }*/
                 ],
                 stopMe: null,
