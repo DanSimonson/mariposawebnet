@@ -1,20 +1,22 @@
 <template>
   <!--style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;" -->
   <div id="parahome">
+    <div class='pimg1'></div>
     <div class="parallax-one">
       <h1 class="test">Build Your Application Today</h1>
       <h3 class="test">______________________</h3>
       <h3 class="test">MARIPOSAWEB DEVELOPMENT</h3>
     </div>
-
+    
     <div class="container vueProjects">
       <h1 class="myBtn align-me">Featured Vue.js Projects</h1>
       <Slide></Slide>
     </div>
     <!--style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;" -->
-    <div      
+    <!--<div      
       class="parallax-two gradientMe"
-      ></div>
+      ></div>-->
+    <div class="pimg2"></div>
 
     <p class="myBtn align-me">Some More Projects</p>
 
@@ -119,7 +121,8 @@
       </div>
     </div>
 
-    <div class="parallax-three"></div>
+    <!--<div class="parallax-three"></div>-->
+    <div class="pimg3"></div>
 
     <div class="last-row">
       <div class="left">
@@ -155,17 +158,17 @@ export default {
   },
   methods: {
     parallaxMe() {
-      let offset = window.scrollY;
-      let one = document.querySelector(".parallax-one");
-      let two = document.querySelector(".parallax-two");
-      let three = document.querySelector(".parallax-three");
-      one.style.backgroundPositionY = offset * 1.05 + "px";
-      two.style.backgroundPositionY = offset * 0.95 + "px";
-      three.style.backgroundPositionY = offset * 0.7 + "px";
+      //let offset = window.scrollY;
+      //let one = document.querySelector(".parallax-one");
+      //let two = document.querySelector(".parallax-two");
+      //let three = document.querySelector(".parallax-three");
+      //one.style.backgroundPositionY = offset * 1.05 + "px";
+      //two.style.backgroundPositionY = offset * 0.95 + "px";
+      //three.style.backgroundPositionY = offset * 0.7 + "px";
     }
   },
   created() {
-    window.addEventListener("scroll", this.parallaxMe);
+    //window.addEventListener("scroll", this.parallaxMe);
   }
 };
 </script>
@@ -179,6 +182,34 @@ export default {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+.pimg1{
+   background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
+   min-height:400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+.pimg2{
+   background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
+   min-height:300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+.pimg3{
+   background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
+   min-height:300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
 }
 
 .parallax-one {
@@ -202,20 +233,20 @@ export default {
         background-attachment: fixed;
         style="height: 900px;background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544625042/projectPhotos/mariposaweb/butterfly/butterflybig.jpg');"*/
 }
-.parallax-one {
+/*.parallax-one {
   height: 400px;
   /*width: 100vw;*/
-  background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
+  /*background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
   /*background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
 
-}
+}*/
 
-.parallax-two {
+/*.parallax-two {
   height: 400px;
-  /*width: 100vw;*/
+  /*width: 100vw;
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
   /*background-attachment: fixed;
   background-position: center;
@@ -226,15 +257,15 @@ export default {
         background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544624680/projectPhotos/mariposaweb/butterfly/butterfly2big.jpg');
         background-size: cover;
         /*background-position: center;
-        background-repeat: no-repeat;*/
-}
+        background-repeat: no-repeat;
+}*/
 
 .parallax-three { 
-  height: 400px;
+  //height: 400px;
   /*width: 100vw;*/
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
-  /*background-attachment: fixed;
-  background-position: center;
+  background-attachment: fixed;
+  /*background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-size: cover;
