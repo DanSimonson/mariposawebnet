@@ -226,6 +226,7 @@ export default {
   }
 
   /*height: 900px;
+       removed
         width: 100vw;
         background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');
         background-size: cover;
@@ -246,7 +247,7 @@ export default {
 }*/
 
 /*.parallax-two {
-  height: 400px;
+  height: 400p
   width: 100vw;
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
   background-attachment: fixed;
