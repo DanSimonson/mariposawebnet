@@ -158,6 +158,7 @@ export default {
   },
   methods: {
     parallaxMe() {
+      //removed parallax effect and added fixed div with images'
       //let offset = window.scrollY;
       //let one = document.querySelector(".parallax-one");
       //let two = document.querySelector(".parallax-two");
