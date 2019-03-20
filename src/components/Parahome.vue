@@ -236,8 +236,8 @@ export default {
 }
 /*.parallax-one {
   height: 400px;
-  /*width: 100vw;*/
-  /*background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
+  width: 100vw;
+  background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
   /*background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,13 +247,13 @@ export default {
 
 /*.parallax-two {
   height: 400px;
-  /*width: 100vw;
+  width: 100vw;
   background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
-  /*background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 300px;
+  height: 300px;
         width: 100vw;
         background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544624680/projectPhotos/mariposaweb/butterfly/butterfly2big.jpg');
         background-size: cover;
@@ -261,18 +261,18 @@ export default {
         background-repeat: no-repeat;
 }*/
 
-.parallax-three { 
-  //height: 400px;
-  /*width: 100vw;*/
-  /*background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");*/
-  //background-attachment: fixed;
-  /*background-position: center;
+/*.parallax-three { 
+  height: 400px;
+  width: 100vw;
+  background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
+  /*background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: cover;
-  background-position: center;*/
+  background-size: cover;
+  background-position: center;
   //background-repeat: no-repeat;
-}
+}*/
 
 .myBtn {
   color: $White;
