@@ -264,8 +264,8 @@ export default {
 .parallax-three { 
   //height: 400px;
   /*width: 100vw;*/
-  background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
-  background-attachment: fixed;
+  /*background: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");*/
+  //background-attachment: fixed;
   /*background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
