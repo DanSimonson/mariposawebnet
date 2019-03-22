@@ -52,6 +52,15 @@ export default {
     return {
       showLogo: true,
       cards: [
+         {
+          title: "Chuck Norris App",
+          link: "https://laughing-wiles-4e60ab.netlify.com/",
+          text:
+            "Goal: Create an React.js app demonstrating dynamic route links with router parameters using Chuck Norris API",
+          src: require('../assets/muted/purpleconcrete.jpg'),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
         {
           title: "Two-Ways Todos",
           link: "https://xenodochial-benz-2c40df.netlify.com/",
