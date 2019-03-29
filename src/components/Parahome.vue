@@ -1,21 +1,21 @@
 <template>
   <!--style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596930/projectPhotos/mariposaweb/butterfly/butterfly.jpg');height: 380px;" -->
   <div id="parahome">
-    <div class='pimg1'></div>
+    <div class="pimg1"></div>
     <div class="parallax-one">
       <h1 class="test">Build Your Application Today</h1>
       <h3 class="test">______________________</h3>
       <h3 class="test">MARIPOSAWEB DEVELOPMENT</h3>
     </div>
-    
+
     <div class="container vueProjects">
-      <h1 class="myBtn align-me">Featured Vue.js Projects</h1>
+      <h1 class="myBtn align-me">Featured Projects</h1>
       <Slide></Slide>
     </div>
     <!--style="background: url('https://res.cloudinary.com/dmglopmul/image/upload/v1544596956/projectPhotos/mariposaweb/butterfly/butterfly2.jpg');height: 380px;" -->
     <!--<div      
       class="parallax-two gradientMe"
-      ></div>-->
+    ></div>-->
     <div class="pimg2"></div>
 
     <p class="myBtn align-me">Some More Projects</p>
@@ -185,32 +185,32 @@ export default {
   padding: 0;
 }
 
-.pimg1{
-   background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
-   min-height:400px;
+.pimg1 {
+  background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly.jpg");
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
+  position: relative;
 }
-.pimg2{
-   background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
-   min-height:300px;
+.pimg2 {
+  background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly2.jpg");
+  min-height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
+  position: relative;
 }
-.pimg3{
-   background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
-   min-height:300px;
+.pimg3 {
+  background-image: url("https://res.cloudinary.com/dmglopmul/image/upload/v1544596970/projectPhotos/mariposaweb/butterfly/butterfly3.jpg");
+  min-height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
+  position: relative;
 }
 
 .parallax-one {
