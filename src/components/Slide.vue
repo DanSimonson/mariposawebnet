@@ -34,12 +34,19 @@
                         url: "https://brave-mccarthy-f6fbb2.netlify.com"
                     },
                     {
+                        imgLink: require("../assets/vueProjects/dcs.jpg"),
+                        title: "Dan's Wysiwig Keeper",
+                        description: "Document Control System with editor using React.js and Firestore.",
+                        id: 2,
+                        url: "https://romantic-agnesi-f35b5d.netlify.com/"
+                    },
+                    /*{
                         imgLink: require("../assets/vueProjects/handbig.jpg"),
                         title: "Spa Website",
                         description: "Spa website using Vue, Authentication, Route Guards.",
                         id: 2,
                         url: "https://user-info-ee17c.firebaseapp.com/"
-                    },
+                    },*/
                     {
                         imgLink: require("../assets/vueProjects/childrenKusina2.jpg"),
                       title: "Cucina Ni Nanay",

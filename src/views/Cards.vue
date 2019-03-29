@@ -52,6 +52,15 @@ export default {
     return {
       showLogo: true,
       cards: [
+        {
+          title: "Dan's Wysiwyg Keeper",
+          link: "https://romantic-agnesi-f35b5d.netlify.com/",
+          text:
+            "Goal: Use React.js and Firestore to combine a react-draft-wysiwyg with a docoment control system",
+          src: require('../assets/muted/polygon.jpg'),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
          {
           title: "Chuck Norris App",
           link: "https://laughing-wiles-4e60ab.netlify.com/",

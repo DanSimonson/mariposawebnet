@@ -120,7 +120,7 @@ export default {
   padding: 2rem;
 }
 .tricorder {
-  height: 20vw;//26vw;
+  height: 20vw; //26vw;
   width: 90vw;
   /*border: 5px solid firebrick;*/
   margin: 130px auto 0 auto;
