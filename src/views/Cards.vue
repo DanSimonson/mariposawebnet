@@ -53,6 +53,15 @@ export default {
       showLogo: true,
       cards: [
         {
+          title: "Free Code Camp React.js Pomodoro Timer",
+          link: "https://dansimonson.github.io/work-rest-timer/",
+          text:
+            "Goal: Use React.js to create a Pomodoro Timer",
+          src: require('../assets/muted/darkblue.jpg'),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
+        {
           title: "Dan's Wysiwyg Keeper",
           link: "https://romantic-agnesi-f35b5d.netlify.com/",
           text:
