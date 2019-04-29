@@ -53,11 +53,20 @@ export default {
       showLogo: true,
       cards: [
         {
+          title:
+            "a full-stack app imitating intelligence dossiers on marvel's avengers",
+          link: "https://elated-mestorf-680861.netlify.com/",
+          text:
+            "Goal: Use React.js and Firestore to create Marvel Avenger's Dossiers",
+          src: require("../assets/muted/pink.jpg"),
+          flex: 6
+          //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+        },
+        {
           title: "Free Code Camp React.js Pomodoro Timer",
           link: "https://dansimonson.github.io/work-rest-timer/",
-          text:
-            "Goal: Use React.js to create a Pomodoro Timer",
-          src: require('../assets/muted/darkblue.jpg'),
+          text: "Goal: Use React.js to create a Pomodoro Timer",
+          src: require("../assets/muted/darkblue.jpg"),
           flex: 6
           //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
         },
@@ -66,16 +75,16 @@ export default {
           link: "https://romantic-agnesi-f35b5d.netlify.com/",
           text:
             "Goal: Use React.js and Firestore to combine a react-draft-wysiwyg with a docoment control system",
-          src: require('../assets/muted/polygon.jpg'),
+          src: require("../assets/muted/polygon.jpg"),
           flex: 6
           //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
         },
-         {
+        {
           title: "Chuck Norris App",
           link: "https://laughing-wiles-4e60ab.netlify.com/",
           text:
             "Goal: Create an React.js app demonstrating dynamic route links with router parameters using Chuck Norris API",
-          src: require('../assets/muted/purpleconcrete.jpg'),
+          src: require("../assets/muted/purpleconcrete.jpg"),
           flex: 6
           //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
         },

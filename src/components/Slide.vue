@@ -63,13 +63,21 @@
                         url: "http://extra-small-stick.surge.sh"
                     },
                     {
+                        imgLink: require("../assets/vueProjects/avengers.jpg"),
+                        title: "Avenger's Dossiers App",
+                        description: "a full-stack app of intelligence dossiers on marvel's avengers",
+                        id: 5,
+                        url: "https://elated-mestorf-680861.netlify.com/"
+
+                    },
+                    /*{
                         imgLink: require("../assets/vueProjects/crud.jpg"),
                         title: "Customer Information App",
                         description: "crud app using Vue, Firestore, Bootstrap 4.",
                         id: 5,
                         url: "https://human-resources-cb42b.firebaseapp.com/"
 
-                    }
+                    }*/
                     /*{
                                
                                    imgLink: require("../assets/vueProjects/onlineStore.jpg"),
