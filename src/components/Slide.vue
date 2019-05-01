@@ -67,7 +67,7 @@
                         title: "Avenger's Dossiers App",
                         description: "a full-stack app of intelligence dossiers on marvel's avengers",
                         id: 5,
-                        url: "https://elated-mestorf-680861.netlify.com/"
+                        url: "https://tender-shockley-0f4de4.netlify.com/"
 
                     },
                     /*{

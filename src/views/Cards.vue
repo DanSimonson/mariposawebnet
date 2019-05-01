@@ -55,7 +55,7 @@ export default {
         {
           title:
             "a full-stack app imitating intelligence dossiers on marvel's avengers",
-          link: "https://elated-mestorf-680861.netlify.com/",
+          link: "https://tender-shockley-0f4de4.netlify.com/",
           text:
             "Goal: Use React.js and Firestore to create Marvel Avenger's Dossiers",
           src: require("../assets/muted/pink.jpg"),
